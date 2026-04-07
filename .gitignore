@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+build/
+*.spec
+
+# Local editor files
+*.code-workspace
+
+# Keep assignment deliverables such as Pans_Trial.exe and Balancing_Testing_01.xlsx tracked if needed.
