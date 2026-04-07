@@ -59,11 +59,11 @@ python main.py
 
 ## Build the Executable
 
-The submitted executable was built with PyInstaller:
+The submitted executable was built with PyInstaller and the included slim spec file. The spec removes unused large pygame_gui CJK font bundles so the single executable stays below the 25 MB upload limit.
 
 ```powershell
 .\.venv\Scripts\python.exe -m pip install pyinstaller
-.\.venv\Scripts\python.exe -m PyInstaller --onefile --windowed --name Pans_Trial --distpath . --workpath build --specpath build main.py
+.\.venv\Scripts\python.exe -m PyInstaller --noconfirm --clean --distpath . --workpath build\pyinstaller_slim Pans_Trial_slim.spec
 ```
 
 ## Notes for GitHub
